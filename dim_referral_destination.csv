@@ -1,0 +1,26 @@
+destination_id,organization_name,specialty,in_network_flag,competitor_flag,city
+DEST001,OHSU Cardiovascular Institute,Cardiology,False,True,Portland
+DEST002,OHSU Digestive Health Center,Gastroenterology,False,True,Portland
+DEST003,OHSU Orthopedic Surgery,Orthopedics,False,True,Portland
+DEST004,OHSU Neurosciences,Neurosurgery,False,True,Portland
+DEST005,OHSU Urology,Urology,False,True,Portland
+DEST006,Providence Heart Clinic,Cardiology,False,True,Portland
+DEST007,Providence Gastroenterology,Gastroenterology,False,True,Portland
+DEST008,Providence Orthopedics,Orthopedics,False,True,Portland
+DEST009,Providence Neuroscience Institute,Neurosurgery,False,True,Portland
+DEST010,Legacy Cardiology Associates,Cardiology,False,True,Portland
+DEST011,Legacy Medical Group,General Surgery,False,True,Portland
+DEST012,PeaceHealth Heart Care,Cardiology,False,True,Vancouver
+DEST013,PeaceHealth Digestive Health,Gastroenterology,False,True,Vancouver
+DEST014,Kaiser Permanente Cardiology,Cardiology,False,True,Portland
+DEST015,Kaiser Permanente GI,Gastroenterology,False,True,Clackamas
+DEST016,Pacific Cardiology Group,Cardiology,True,False,Beaverton
+DEST017,Willamette Cardiovascular,Cardiology,True,False,Salem
+DEST018,Oregon Gastro Associates,Gastroenterology,True,False,Portland
+DEST019,Columbia Orthopedic Group,Orthopedics,True,False,Portland
+DEST020,NW Spine and Neurosurgery,Neurosurgery,True,False,Portland
+DEST021,Cascade Urology,Urology,True,False,Tualatin
+DEST022,Portland Surgical Associates,General Surgery,True,False,Portland
+DEST023,Tualatin Valley Cardiology,Cardiology,True,False,Hillsboro
+DEST024,East Metro Cardiology,Cardiology,False,False,Gresham
+DEST025,Vancouver Heart Institute,Cardiology,False,True,Vancouver

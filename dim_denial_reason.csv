@@ -1,0 +1,25 @@
+denial_reason_id,denial_reason
+DR001,Eligibility
+DR002,Auth Required
+DR003,No Referral
+DR004,Timely Filing
+DR005,Coding
+DR006,Modifier
+DR007,Medical Necessity
+DR008,Duplicate
+DR009,Non Covered
+DR010,Bundling
+DR011,Invalid Provider
+DR012,Invalid Member
+DR013,Missing Info
+DR014,Coordination of Benefits
+DR015,Place of Service
+DR016,Charge Exceeds Fee
+DR017,Diagnosis Mismatch
+DR018,Claim Form Error
+DR019,Precert Not Obtained
+DR020,Experimental
+DR021,NPI Mismatch
+DR022,Coverage Termed
+DR023,Accident Info
+DR024,Other
