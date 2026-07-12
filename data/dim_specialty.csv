@@ -1,0 +1,32 @@
+specialty_id,specialty_name
+SP001,Cardiology
+SP002,Dermatology
+SP003,Gastroenterology
+SP004,Neurosurgery
+SP005,Orthopedics
+SP006,Radiation Oncology
+SP007,Pulmonary
+SP008,OBGYN
+SP009,Urology
+SP010,ENT
+SP011,Plastic Surgery
+SP012,Rheumatology
+SP013,Endocrinology
+SP014,Neurology
+SP015,Oncology
+SP016,Hematology
+SP017,General Surgery
+SP018,Pediatrics
+SP019,Family Medicine
+SP020,Internal Medicine
+SP021,Sports Medicine
+SP022,Pain Management
+SP023,Sleep Medicine
+SP024,Allergy
+SP025,Imaging
+SP026,Pathology
+SP027,Podiatry
+SP028,Ophthalmology
+SP029,Psychiatry
+SP030,Physical Therapy
+SP031,Wound Care

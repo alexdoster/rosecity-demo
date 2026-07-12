@@ -1,0 +1,18 @@
+payer_id,payer_name,payer_category,allowed_multiplier
+PY001,Blue Cross,Commercial,1.0
+PY002,Aetna,Commercial,1.0
+PY003,Cigna,Commercial,1.0
+PY004,United,Commercial,1.0
+PY005,Kaiser,Commercial,1.0
+PY006,Humana,Commercial,1.0
+PY007,Moda,Commercial,1.0
+PY008,Regence,Commercial,1.0
+PY009,Medicare,Medicare,0.68
+PY010,Medicare Advantage,Medicare,0.68
+PY011,Medicaid,Medicaid,0.55
+PY012,Tricare,Government,0.72
+PY013,Workers Comp,Government,0.72
+PY014,Self Pay,Self Pay,0.85
+PY015,Charity,Self Pay,0.85
+PY016,Commercial Other,Commercial,1.0
+PY017,Other,Other,0.75

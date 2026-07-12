@@ -1,0 +1,54 @@
+location_id,location_name,city,region,clinic_type,is_hospital_based
+LC0001,Lake Oswego Clinic,Lake Oswego,South,Medical Office,0
+LC0002,Tigard Surgery,Tigard,West,Surgery Center,1
+LC0003,Oregon City Surgery,Oregon City,South,Surgery Center,0
+LC0004,Tualatin Clinic,Tualatin,South,Medical Office,0
+LC0005,Portland Clinic,Portland,Central,Medical Office,0
+LC0006,Happy Valley Clinic,Happy Valley,East,Medical Office,0
+LC0007,Lake Oswego Clinic 2,Lake Oswego,South,Medical Office,0
+LC0008,Milwaukie Clinic,Milwaukie,Central,Medical Office,0
+LC0009,Portland Clinic 2,Portland,Central,Medical Office,0
+LC0010,Tigard Clinic,Tigard,West,Medical Office,0
+LC0011,Beaverton Surgery,Beaverton,West,Surgery Center,0
+LC0012,Wilsonville Clinic,Wilsonville,South,Medical Office,0
+LC0013,Hillsboro Clinic,Hillsboro,West,Medical Office,0
+LC0014,Milwaukie Clinic 2,Milwaukie,Central,Medical Office,0
+LC0015,Tigard Clinic 2,Tigard,West,Medical Office,0
+LC0016,Portland Clinic 3,Portland,Central,Medical Office,0
+LC0017,Gresham Clinic,Gresham,East,Medical Office,1
+LC0018,Portland Clinic 4,Portland,Central,Medical Office,0
+LC0019,Milwaukie Clinic 3,Milwaukie,Central,Medical Office,1
+LC0020,Hillsboro Imaging,Hillsboro,West,Imaging Center,0
+LC0021,Lake Oswego Clinic 3,Lake Oswego,South,Medical Office,0
+LC0022,Beaverton Clinic,Beaverton,West,Medical Office,0
+LC0023,Happy Valley Clinic 2,Happy Valley,East,Medical Office,0
+LC0024,Oregon City Clinic,Oregon City,South,Medical Office,0
+LC0025,Lake Oswego Clinic 4,Lake Oswego,South,Medical Office,0
+LC0026,Portland Clinic 5,Portland,Central,Medical Office,0
+LC0027,Tigard Surgery 2,Tigard,West,Surgery Center,0
+LC0028,Portland Clinic 6,Portland,Central,Medical Office,0
+LC0029,Portland Clinic 7,Portland,Central,Medical Office,0
+LC0030,Tualatin Surgery,Tualatin,South,Surgery Center,0
+LC0031,Lake Oswego Clinic 5,Lake Oswego,South,Medical Office,0
+LC0032,Happy Valley Clinic 3,Happy Valley,East,Medical Office,0
+LC0033,Beaverton Clinic 2,Beaverton,West,Medical Office,0
+LC0034,Beaverton Surgery 2,Beaverton,West,Surgery Center,1
+LC0035,Tigard Clinic 3,Tigard,West,Medical Office,0
+LC0036,Portland Clinic 8,Portland,Central,Medical Office,0
+LC0037,Portland Clinic 9,Portland,Central,Medical Office,0
+LC0038,Tigard Clinic 4,Tigard,West,Medical Office,0
+LC0039,Portland Clinic 10,Portland,Central,Medical Office,0
+LC0040,Tualatin Clinic 2,Tualatin,South,Medical Office,0
+LC0041,Tigard Clinic 5,Tigard,West,Medical Office,0
+LC0042,Milwaukie Clinic 4,Milwaukie,Central,Medical Office,0
+LC0043,Tualatin Clinic 3,Tualatin,South,Medical Office,0
+LC0044,Beaverton Clinic 3,Beaverton,West,Medical Office,1
+LC0045,Milwaukie Clinic 5,Milwaukie,Central,Medical Office,0
+LC0046,Milwaukie Clinic 6,Milwaukie,Central,Medical Office,0
+LC0047,Beaverton Infusion,Beaverton,West,Infusion Center,0
+LC0048,Portland Imaging,Portland,Central,Imaging Center,1
+LC0049,Tualatin Clinic 4,Tualatin,South,Medical Office,0
+LC0050,Portland Clinic 11,Portland,Central,Medical Office,0
+LC0051,Portland Infusion,Portland,Central,Infusion Center,0
+LC0052,Portland Surgery,Portland,Central,Surgery Center,0
+LC0053,Milwaukie Surgery,Milwaukie,Central,Surgery Center,0

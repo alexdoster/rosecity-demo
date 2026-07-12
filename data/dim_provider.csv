@@ -1,0 +1,288 @@
+npi,provider_name,specialty_id,credential,fte,is_active,hire_date,primary_location_id,primary_location_name,tenure_bucket
+3514565391,Avery King,SP008,MD,0.95,1,2006-12-22,LC0001,Lake Oswego Clinic,10 plus Years
+5875819851,Rowan Lopez,SP014,MD,0.9,1,2008-06-04,LC0001,Lake Oswego Clinic,10 plus Years
+7527235834,Skyler Allen,SP031,NP,0.35,1,2016-08-04,LC0001,Lake Oswego Clinic,6 to 10 Years
+4010088805,Jordan Allen,SP004,MD,0.95,1,2006-02-23,LC0001,Lake Oswego Clinic,10 plus Years
+0253417308,Hayden Lee,SP006,MD,0.9,1,2016-09-24,LC0001,Lake Oswego Clinic,6 to 10 Years
+7904878436,Avery Lewis,SP001,MD,0.95,1,2014-12-03,LC0001,Lake Oswego Clinic,10 plus Years
+7126615354,Casey Wilson,SP008,MD,0.95,1,2014-09-26,LC0001,Lake Oswego Clinic,10 plus Years
+9094743767,Rowan Lopez,SP004,MD,0.75,1,2018-09-26,LC0001,Lake Oswego Clinic,6 to 10 Years
+1773963062,Emerson Smith,SP018,MD,1.0,1,2015-10-19,LC0001,Lake Oswego Clinic,6 to 10 Years
+2754171489,Riley Wright,SP004,MD,1.0,1,2019-08-23,LC0001,Lake Oswego Clinic,6 to 10 Years
+9995288962,Drew Kim,SP018,MD,1.0,1,2020-04-27,LC0001,Lake Oswego Clinic,3 to 5 Years
+1548330876,Riley Williams,SP006,MD,1.0,1,2023-04-02,LC0001,Lake Oswego Clinic,0 to 2 Years
+0444913124,Drew Brown,SP007,MD,0.9,1,2020-12-25,LC0003,Oregon City Surgery,3 to 5 Years
+9906212149,Reese Wilson,SP007,MD,1.0,1,2015-09-15,LC0003,Oregon City Surgery,6 to 10 Years
+9574002283,Reese Johnson,SP018,MD,1.0,1,2015-03-24,LC0003,Oregon City Surgery,6 to 10 Years
+8865646778,Reese Young,SP012,NP,1.0,1,2010-06-02,LC0004,Tualatin Clinic,10 plus Years
+6073758392,Taylor Jones,SP007,MD,1.0,1,2017-03-29,LC0005,Portland Clinic,6 to 10 Years
+8345768354,Rowan Hernandez,SP024,MD,0.9,1,2008-08-10,LC0005,Portland Clinic,10 plus Years
+4935183353,Rowan Martinez,SP016,MD,0.8,1,2023-06-17,LC0005,Portland Clinic,0 to 2 Years
+4855103993,Rowan Hernandez,SP004,NP,1.0,1,2021-11-04,LC0005,Portland Clinic,3 to 5 Years
+6631033125,Jordan Lewis,SP025,MD,1.0,1,2008-03-30,LC0005,Portland Clinic,10 plus Years
+0696443155,Parker Patel,SP006,MD,1.0,1,2020-09-25,LC0005,Portland Clinic,3 to 5 Years
+5042175678,Parker Miller,SP001,MD,1.0,0,2008-03-12,LC0005,Portland Clinic,10 plus Years
+9868497691,Jordan Wright,SP012,MD,1.0,1,2019-07-10,LC0005,Portland Clinic,6 to 10 Years
+5729674809,Casey Jones,SP003,DO,1.0,1,2007-08-24,LC0005,Portland Clinic,10 plus Years
+1578465969,Parker Hall,SP005,PA,0.95,1,2015-02-25,LC0005,Portland Clinic,6 to 10 Years
+4919128792,Finley Lewis,SP019,MD,1.0,1,2018-05-02,LC0005,Portland Clinic,6 to 10 Years
+7630120576,Casey Hall,SP003,DO,1.0,0,2019-08-31,LC0005,Portland Clinic,6 to 10 Years
+9489843928,Blake Wilson,SP022,MD,0.95,1,2013-11-06,LC0006,Happy Valley Clinic,10 plus Years
+4076025580,Cameron Patel,SP027,MD,0.9,1,2023-04-12,LC0006,Happy Valley Clinic,0 to 2 Years
+2948200393,Hayden King,SP016,DO,1.0,1,2020-07-07,LC0006,Happy Valley Clinic,3 to 5 Years
+0319677678,Quinn Thomas,SP018,MD,0.95,1,2009-11-26,LC0006,Happy Valley Clinic,10 plus Years
+0877383091,Quinn Garcia,SP018,MD,0.95,1,2018-08-01,LC0006,Happy Valley Clinic,6 to 10 Years
+2162840958,Reese Clark,SP031,MD,0.8,1,2019-09-11,LC0006,Happy Valley Clinic,6 to 10 Years
+2650746868,Emerson King,SP006,PA,1.0,1,2012-04-03,LC0006,Happy Valley Clinic,10 plus Years
+6224853787,Quinn King,SP003,MD,1.0,1,2019-11-03,LC0006,Happy Valley Clinic,6 to 10 Years
+9275431251,Cameron Lopez,SP014,MD,1.0,1,2022-11-04,LC0007,Lake Oswego Clinic 2,3 to 5 Years
+8816063472,Reese Wright,SP014,MD,1.0,1,2021-04-26,LC0007,Lake Oswego Clinic 2,3 to 5 Years
+4859627457,Finley Smith,SP004,MD,0.95,1,2020-04-18,LC0008,Milwaukie Clinic,3 to 5 Years
+1151987759,Jordan Miller,SP017,MD,1.0,1,2017-11-23,LC0008,Milwaukie Clinic,6 to 10 Years
+0349243117,Cameron Gonzalez,SP001,NP,1.0,1,2011-01-27,LC0008,Milwaukie Clinic,10 plus Years
+3003250340,Quinn Anderson,SP026,DO,1.0,1,2020-11-27,LC0009,Portland Clinic 2,3 to 5 Years
+9683448998,Emerson Williams,SP006,NP,0.6,1,2012-10-29,LC0009,Portland Clinic 2,10 plus Years
+7559238326,Quinn Martinez,SP001,NP,0.95,1,2015-12-23,LC0009,Portland Clinic 2,6 to 10 Years
+5389359724,Quinn Wright,SP003,MD,0.8,1,2011-11-23,LC0009,Portland Clinic 2,10 plus Years
+5660282230,Sawyer Anderson,SP005,MD,0.55,1,2011-11-14,LC0009,Portland Clinic 2,10 plus Years
+1138020522,Quinn Martinez,SP006,MD,0.85,1,2008-12-15,LC0009,Portland Clinic 2,10 plus Years
+7576484991,Morgan Miller,SP001,MD,1.0,1,2024-01-09,LC0009,Portland Clinic 2,0 to 2 Years
+5628692749,Casey Smith,SP006,PA,0.85,1,2008-10-08,LC0009,Portland Clinic 2,10 plus Years
+1153146398,Jordan Martinez,SP004,MD,1.0,0,2007-08-14,LC0009,Portland Clinic 2,10 plus Years
+7594109971,Alex Lopez,SP008,PA,1.0,1,2023-07-20,LC0009,Portland Clinic 2,0 to 2 Years
+1200250941,Parker Williams,SP008,MD,0.8,1,2016-05-28,LC0009,Portland Clinic 2,6 to 10 Years
+2573008160,Hayden Thomas,SP006,MD,0.95,1,2014-03-18,LC0010,Tigard Clinic,10 plus Years
+3708642939,Finley Clark,SP006,MD,1.0,1,2019-10-29,LC0010,Tigard Clinic,6 to 10 Years
+4324102143,Alex Lee,SP002,MD,1.0,1,2013-03-09,LC0011,Beaverton Surgery,10 plus Years
+8101524034,Drew Wright,SP001,MD,0.95,1,2008-05-25,LC0011,Beaverton Surgery,10 plus Years
+4457485228,Morgan Garcia,SP004,MD,1.0,1,2019-09-06,LC0011,Beaverton Surgery,6 to 10 Years
+3529486322,Emerson Wright,SP019,MD,1.0,1,2009-04-20,LC0011,Beaverton Surgery,10 plus Years
+7329404484,Morgan Davis,SP031,PA,0.75,1,2016-05-14,LC0011,Beaverton Surgery,6 to 10 Years
+7116031093,Reese Lee,SP026,MD,1.0,1,2023-10-17,LC0013,Hillsboro Clinic,0 to 2 Years
+0091801173,Avery Davis,SP013,MD,1.0,1,2023-07-20,LC0013,Hillsboro Clinic,0 to 2 Years
+6420525681,Reese Jones,SP014,DO,1.0,1,2012-10-06,LC0013,Hillsboro Clinic,10 plus Years
+4028564187,Parker Brown,SP006,MD,0.55,1,2020-08-17,LC0014,Milwaukie Clinic 2,3 to 5 Years
+7982229544,Hayden Johnson,SP019,NP,1.0,1,2017-06-26,LC0015,Tigard Clinic 2,6 to 10 Years
+9699037811,Casey Kim,SP019,DO,1.0,1,2014-12-27,LC0015,Tigard Clinic 2,10 plus Years
+3571622542,Emerson King,SP024,MD,0.9,1,2008-08-16,LC0015,Tigard Clinic 2,10 plus Years
+6380807338,Cameron Johnson,SP025,MD,0.75,1,2013-01-20,LC0015,Tigard Clinic 2,10 plus Years
+0716787379,Hayden Anderson,SP010,MD,1.0,0,2018-03-22,LC0015,Tigard Clinic 2,6 to 10 Years
+8318152177,Blake Williams,SP019,DO,1.0,1,2024-06-30,LC0015,Tigard Clinic 2,0 to 2 Years
+1660175190,Sawyer Walker,SP022,NP,0.4,1,2006-02-03,LC0015,Tigard Clinic 2,10 plus Years
+2090595538,Casey Clark,SP006,MD,1.0,1,2019-06-16,LC0015,Tigard Clinic 2,6 to 10 Years
+1580845163,Riley Williams,SP026,MD,1.0,1,2021-11-12,LC0015,Tigard Clinic 2,3 to 5 Years
+1270451237,Riley Gonzalez,SP003,MD,1.0,1,2023-10-31,LC0015,Tigard Clinic 2,0 to 2 Years
+6981005128,Riley Lopez,SP031,MD,0.9,0,2013-12-11,LC0015,Tigard Clinic 2,10 plus Years
+8882661559,Drew Lewis,SP019,PA,1.0,1,2008-03-22,LC0015,Tigard Clinic 2,10 plus Years
+3765775279,Sawyer Nguyen,SP003,MD,1.0,0,2011-01-30,LC0015,Tigard Clinic 2,10 plus Years
+7914959008,Sawyer Garcia,SP018,MD,1.0,1,2021-12-11,LC0015,Tigard Clinic 2,3 to 5 Years
+7354490780,Cameron Williams,SP001,MD,1.0,1,2022-06-17,LC0015,Tigard Clinic 2,3 to 5 Years
+6316413926,Reese Clark,SP019,DO,0.9,1,2017-12-11,LC0016,Portland Clinic 3,6 to 10 Years
+1619899226,Skyler Davis,SP021,PA,1.0,1,2008-04-20,LC0016,Portland Clinic 3,10 plus Years
+3487686349,Emerson Jones,SP016,MD,0.95,1,2008-04-14,LC0017,Gresham Clinic,10 plus Years
+5076757958,Casey Davis,SP024,MD,0.8,1,2014-12-19,LC0017,Gresham Clinic,10 plus Years
+4179688759,Cameron Gonzalez,SP003,MD,1.0,1,2017-01-10,LC0017,Gresham Clinic,6 to 10 Years
+0024740294,Blake Kim,SP006,MD,0.9,1,2006-08-10,LC0017,Gresham Clinic,10 plus Years
+9387986360,Avery King,SP009,MD,0.95,1,2018-11-11,LC0017,Gresham Clinic,6 to 10 Years
+3365534065,Parker Kim,SP001,MD,0.95,1,2016-03-17,LC0018,Portland Clinic 4,6 to 10 Years
+5954013331,Sawyer Wilson,SP011,MD,1.0,1,2006-03-26,LC0018,Portland Clinic 4,10 plus Years
+3713136031,Sawyer Young,SP006,MD,1.0,1,2007-10-18,LC0018,Portland Clinic 4,10 plus Years
+0972104757,Emerson Martinez,SP008,MD,1.0,0,2014-07-08,LC0018,Portland Clinic 4,10 plus Years
+8324291453,Hayden King,SP009,MD,1.0,1,2019-07-19,LC0018,Portland Clinic 4,6 to 10 Years
+0442100407,Riley Patel,SP024,DO,0.95,1,2021-06-22,LC0018,Portland Clinic 4,3 to 5 Years
+9266481222,Avery Lopez,SP006,MD,1.0,1,2014-02-01,LC0018,Portland Clinic 4,10 plus Years
+1237387912,Cameron Garcia,SP025,NP,1.0,1,2011-07-16,LC0018,Portland Clinic 4,10 plus Years
+9693950416,Drew Johnson,SP009,MD,0.9,1,2024-02-26,LC0018,Portland Clinic 4,0 to 2 Years
+9325408878,Cameron Martinez,SP006,MD,1.0,1,2014-08-06,LC0018,Portland Clinic 4,10 plus Years
+6455102410,Reese Miller,SP013,MD,0.85,1,2011-11-30,LC0018,Portland Clinic 4,10 plus Years
+1835577281,Parker Gonzalez,SP009,MD,1.0,1,2014-04-17,LC0018,Portland Clinic 4,10 plus Years
+3841707020,Finley Walker,SP005,MD,0.9,1,2006-03-24,LC0019,Milwaukie Clinic 3,10 plus Years
+6941287130,Avery Miller,SP013,MD,1.0,1,2011-08-30,LC0019,Milwaukie Clinic 3,10 plus Years
+2186164045,Avery Thomas,SP003,NP,1.0,1,2015-09-01,LC0019,Milwaukie Clinic 3,6 to 10 Years
+1287185877,Taylor Miller,SP007,MD,1.0,0,2023-03-21,LC0019,Milwaukie Clinic 3,0 to 2 Years
+3557232213,Morgan Thomas,SP016,MD,1.0,1,2019-11-03,LC0019,Milwaukie Clinic 3,6 to 10 Years
+0908073525,Skyler Wright,SP009,MD,1.0,1,2020-08-24,LC0019,Milwaukie Clinic 3,3 to 5 Years
+4453584316,Parker Patel,SP024,MD,1.0,1,2016-03-19,LC0019,Milwaukie Clinic 3,6 to 10 Years
+3119048911,Casey Garcia,SP005,DO,0.9,1,2008-01-28,LC0019,Milwaukie Clinic 3,10 plus Years
+1359212808,Hayden Wright,SP030,NP,1.0,1,2013-04-30,LC0019,Milwaukie Clinic 3,10 plus Years
+3119039609,Drew Johnson,SP021,MD,0.8,1,2024-09-09,LC0019,Milwaukie Clinic 3,0 to 2 Years
+4945561899,Alex Wright,SP030,MD,0.9,1,2006-10-30,LC0019,Milwaukie Clinic 3,10 plus Years
+1887348182,Avery Smith,SP024,MD,0.8,1,2022-06-25,LC0019,Milwaukie Clinic 3,3 to 5 Years
+9635093077,Morgan Kim,SP003,MD,1.0,1,2018-10-31,LC0019,Milwaukie Clinic 3,6 to 10 Years
+6607678223,Rowan Young,SP014,NP,1.0,1,2011-04-28,LC0019,Milwaukie Clinic 3,10 plus Years
+9542670593,Riley Gonzalez,SP003,DO,1.0,1,2020-08-01,LC0019,Milwaukie Clinic 3,3 to 5 Years
+2280347144,Jordan Nguyen,SP023,MD,1.0,1,2021-09-09,LC0020,Hillsboro Imaging,3 to 5 Years
+1764319632,Jordan Young,SP016,MD,0.75,1,2006-10-23,LC0020,Hillsboro Imaging,10 plus Years
+4774366505,Drew Walker,SP006,MD,0.95,1,2007-12-30,LC0020,Hillsboro Imaging,10 plus Years
+4695351064,Alex Nguyen,SP026,MD,1.0,1,2018-06-25,LC0021,Lake Oswego Clinic 3,6 to 10 Years
+9850942878,Blake Garcia,SP003,MD,1.0,1,2024-09-23,LC0021,Lake Oswego Clinic 3,0 to 2 Years
+7294576133,Morgan Thomas,SP016,MD,0.65,1,2006-06-14,LC0022,Beaverton Clinic,10 plus Years
+3973773486,Reese Kim,SP018,PA,1.0,0,2018-06-24,LC0022,Beaverton Clinic,6 to 10 Years
+5175579348,Parker Gonzalez,SP001,MD,1.0,1,2008-07-23,LC0022,Beaverton Clinic,10 plus Years
+1643644420,Parker Davis,SP016,MD,0.9,0,2018-03-10,LC0022,Beaverton Clinic,6 to 10 Years
+1803616763,Jordan Wilson,SP023,MD,0.45,1,2017-09-07,LC0022,Beaverton Clinic,6 to 10 Years
+3083811790,Blake Hernandez,SP002,MD,1.0,1,2007-09-12,LC0023,Happy Valley Clinic 2,10 plus Years
+8729611820,Skyler Smith,SP014,NP,0.95,1,2018-10-05,LC0023,Happy Valley Clinic 2,6 to 10 Years
+7122269977,Alex Thomas,SP006,MD,0.8,1,2022-10-25,LC0024,Oregon City Clinic,3 to 5 Years
+2955779567,Morgan Hernandez,SP018,DO,1.0,1,2022-03-09,LC0025,Lake Oswego Clinic 4,3 to 5 Years
+7236037958,Emerson Williams,SP003,NP,0.95,1,2006-07-18,LC0025,Lake Oswego Clinic 4,10 plus Years
+3465054786,Cameron Gonzalez,SP027,MD,1.0,1,2010-08-11,LC0025,Lake Oswego Clinic 4,10 plus Years
+9634198831,Morgan Young,SP025,MD,1.0,1,2010-07-07,LC0025,Lake Oswego Clinic 4,10 plus Years
+3857446834,Casey Walker,SP004,PA,1.0,1,2014-07-01,LC0025,Lake Oswego Clinic 4,10 plus Years
+8249993890,Rowan Smith,SP006,MD,1.0,1,2008-09-06,LC0025,Lake Oswego Clinic 4,10 plus Years
+9079727143,Finley Lee,SP016,MD,1.0,1,2022-01-06,LC0025,Lake Oswego Clinic 4,3 to 5 Years
+6462666236,Drew King,SP018,NP,1.0,1,2020-07-24,LC0026,Portland Clinic 5,3 to 5 Years
+2453422680,Sawyer Allen,SP010,NP,0.95,1,2021-02-25,LC0026,Portland Clinic 5,3 to 5 Years
+2851300343,Quinn Martinez,SP003,MD,1.0,1,2009-09-19,LC0026,Portland Clinic 5,10 plus Years
+7182167616,Avery Young,SP003,MD,1.0,1,2006-04-10,LC0026,Portland Clinic 5,10 plus Years
+1349219107,Quinn Lewis,SP031,MD,0.95,1,2023-01-27,LC0026,Portland Clinic 5,0 to 2 Years
+4468929602,Jamie Clark,SP011,NP,1.0,1,2011-06-02,LC0027,Tigard Surgery 2,10 plus Years
+9157224822,Casey Clark,SP024,MD,1.0,1,2018-04-21,LC0027,Tigard Surgery 2,6 to 10 Years
+6417851146,Alex Garcia,SP012,MD,1.0,0,2023-01-18,LC0027,Tigard Surgery 2,0 to 2 Years
+5525267608,Jamie Anderson,SP025,MD,0.8,1,2006-09-05,LC0027,Tigard Surgery 2,10 plus Years
+9090510677,Finley Williams,SP002,PA,1.0,1,2006-02-07,LC0027,Tigard Surgery 2,10 plus Years
+1933241422,Alex Jones,SP003,NP,0.9,1,2006-02-07,LC0027,Tigard Surgery 2,10 plus Years
+0367337688,Parker Thomas,SP026,MD,1.0,1,2008-12-06,LC0027,Tigard Surgery 2,10 plus Years
+9894332776,Reese Kim,SP028,MD,1.0,0,2006-12-20,LC0027,Tigard Surgery 2,10 plus Years
+8142821582,Reese Lopez,SP006,PA,0.5,1,2021-05-16,LC0027,Tigard Surgery 2,3 to 5 Years
+9031352057,Hayden Thomas,SP007,PA,0.9,1,2017-05-11,LC0028,Portland Clinic 6,6 to 10 Years
+0200487000,Blake Lee,SP011,MD,1.0,1,2024-05-16,LC0028,Portland Clinic 6,0 to 2 Years
+3678310105,Finley Patel,SP009,MD,1.0,1,2021-01-09,LC0028,Portland Clinic 6,3 to 5 Years
+8285548000,Taylor Allen,SP004,MD,0.95,1,2024-01-21,LC0028,Portland Clinic 6,0 to 2 Years
+4357523723,Quinn Hernandez,SP025,MD,0.95,1,2010-06-22,LC0028,Portland Clinic 6,10 plus Years
+5577433421,Reese Gonzalez,SP005,MD,0.95,1,2011-05-25,LC0028,Portland Clinic 6,10 plus Years
+6267917030,Casey Johnson,SP018,MD,0.4,1,2021-12-03,LC0028,Portland Clinic 6,3 to 5 Years
+1110803695,Alex Allen,SP002,MD,1.0,1,2010-08-04,LC0028,Portland Clinic 6,10 plus Years
+8196149315,Casey Martinez,SP001,NP,1.0,1,2007-01-27,LC0028,Portland Clinic 6,10 plus Years
+8999841625,Quinn Johnson,SP018,MD,1.0,1,2018-07-18,LC0028,Portland Clinic 6,6 to 10 Years
+4692270577,Parker Garcia,SP006,MD,1.0,1,2021-01-06,LC0028,Portland Clinic 6,3 to 5 Years
+5383740501,Morgan Smith,SP018,MD,0.95,1,2024-02-25,LC0028,Portland Clinic 6,0 to 2 Years
+9634622427,Blake Martinez,SP003,MD,0.95,1,2023-05-24,LC0028,Portland Clinic 6,0 to 2 Years
+7183513722,Emerson Miller,SP028,MD,1.0,1,2008-04-03,LC0028,Portland Clinic 6,10 plus Years
+1513456681,Casey Hernandez,SP019,MD,1.0,1,2020-06-22,LC0028,Portland Clinic 6,3 to 5 Years
+0300258764,Emerson Thomas,SP024,MD,1.0,0,2021-11-11,LC0028,Portland Clinic 6,3 to 5 Years
+7188048486,Alex Jones,SP003,MD,0.95,1,2019-02-02,LC0029,Portland Clinic 7,6 to 10 Years
+9403245415,Emerson Anderson,SP006,NP,0.8,1,2021-05-15,LC0029,Portland Clinic 7,3 to 5 Years
+3602804215,Sawyer Anderson,SP007,MD,1.0,1,2021-09-16,LC0030,Tualatin Surgery,3 to 5 Years
+4510168139,Alex Allen,SP014,NP,1.0,1,2014-05-16,LC0030,Tualatin Surgery,10 plus Years
+3320533294,Hayden Clark,SP006,NP,1.0,1,2006-10-02,LC0031,Lake Oswego Clinic 5,10 plus Years
+6428809609,Sawyer Lee,SP002,NP,1.0,1,2014-07-21,LC0031,Lake Oswego Clinic 5,10 plus Years
+7101464117,Emerson Kim,SP007,MD,0.95,1,2009-10-13,LC0031,Lake Oswego Clinic 5,10 plus Years
+8971865199,Sawyer Lee,SP005,MD,1.0,1,2008-02-18,LC0031,Lake Oswego Clinic 5,10 plus Years
+4024034909,Drew Walker,SP008,MD,1.0,1,2008-05-05,LC0031,Lake Oswego Clinic 5,10 plus Years
+5989189344,Jordan Patel,SP004,MD,0.75,1,2019-01-27,LC0031,Lake Oswego Clinic 5,6 to 10 Years
+5429938372,Blake Patel,SP006,MD,0.95,1,2015-06-17,LC0031,Lake Oswego Clinic 5,6 to 10 Years
+5416321917,Reese King,SP017,PA,1.0,1,2016-02-14,LC0031,Lake Oswego Clinic 5,6 to 10 Years
+7805536448,Reese Wilson,SP008,MD,1.0,1,2019-12-21,LC0031,Lake Oswego Clinic 5,6 to 10 Years
+4863989736,Parker Lopez,SP006,NP,0.6,1,2016-04-11,LC0031,Lake Oswego Clinic 5,6 to 10 Years
+7324953426,Drew Anderson,SP014,MD,0.5,1,2017-10-23,LC0031,Lake Oswego Clinic 5,6 to 10 Years
+6353393031,Morgan Lopez,SP019,MD,1.0,1,2007-08-13,LC0032,Happy Valley Clinic 3,10 plus Years
+5031579389,Finley Clark,SP008,MD,1.0,1,2021-12-15,LC0032,Happy Valley Clinic 3,3 to 5 Years
+2757752586,Jordan Gonzalez,SP016,MD,1.0,1,2014-05-31,LC0033,Beaverton Clinic 2,10 plus Years
+9915169063,Finley Johnson,SP030,MD,0.95,1,2008-11-28,LC0033,Beaverton Clinic 2,10 plus Years
+9831995909,Blake Thomas,SP014,MD,0.95,1,2021-03-31,LC0033,Beaverton Clinic 2,3 to 5 Years
+6096950031,Quinn Clark,SP025,MD,0.95,1,2019-10-09,LC0033,Beaverton Clinic 2,6 to 10 Years
+7182424401,Cameron Thomas,SP021,MD,1.0,1,2006-12-30,LC0033,Beaverton Clinic 2,10 plus Years
+5793889389,Avery King,SP001,MD,1.0,1,2009-08-14,LC0034,Beaverton Surgery 2,10 plus Years
+5026147140,Sawyer Smith,SP010,PA,0.85,1,2006-04-18,LC0035,Tigard Clinic 3,10 plus Years
+2529097887,Finley Nguyen,SP018,MD,1.0,1,2011-01-28,LC0035,Tigard Clinic 3,10 plus Years
+1959853113,Jamie Wright,SP031,MD,1.0,1,2007-11-16,LC0035,Tigard Clinic 3,10 plus Years
+3854256974,Morgan Davis,SP012,MD,1.0,1,2019-04-23,LC0035,Tigard Clinic 3,6 to 10 Years
+6949314112,Casey Clark,SP003,MD,1.0,1,2015-10-18,LC0035,Tigard Clinic 3,6 to 10 Years
+8728027376,Quinn Hernandez,SP016,MD,1.0,1,2024-05-17,LC0035,Tigard Clinic 3,0 to 2 Years
+8009554461,Emerson Thomas,SP003,MD,1.0,1,2020-01-19,LC0036,Portland Clinic 8,3 to 5 Years
+5166137618,Finley Garcia,SP019,PA,0.95,1,2017-06-19,LC0036,Portland Clinic 8,6 to 10 Years
+0549592413,Casey King,SP014,MD,1.0,1,2015-07-20,LC0036,Portland Clinic 8,6 to 10 Years
+5143105919,Skyler Lopez,SP018,MD,1.0,1,2007-01-09,LC0037,Portland Clinic 9,10 plus Years
+4284920568,Jamie Lee,SP024,MD,1.0,1,2007-04-26,LC0037,Portland Clinic 9,10 plus Years
+9886341432,Skyler Walker,SP017,MD,1.0,1,2017-07-21,LC0037,Portland Clinic 9,6 to 10 Years
+0253949608,Casey Martinez,SP016,MD,1.0,1,2006-01-30,LC0037,Portland Clinic 9,10 plus Years
+2753593034,Reese Wilson,SP019,MD,1.0,1,2006-10-17,LC0038,Tigard Clinic 4,10 plus Years
+9789120088,Emerson Smith,SP024,MD,0.95,1,2010-02-09,LC0038,Tigard Clinic 4,10 plus Years
+9175098578,Riley Garcia,SP024,MD,0.95,1,2022-07-29,LC0038,Tigard Clinic 4,3 to 5 Years
+3749019233,Rowan Lopez,SP001,DO,1.0,1,2014-08-09,LC0039,Portland Clinic 10,10 plus Years
+7152191067,Sawyer Thomas,SP015,MD,0.95,1,2019-04-21,LC0039,Portland Clinic 10,6 to 10 Years
+8175819684,Morgan Wilson,SP004,MD,1.0,1,2013-09-18,LC0039,Portland Clinic 10,10 plus Years
+3961973531,Jordan Gonzalez,SP024,MD,0.95,1,2009-03-31,LC0039,Portland Clinic 10,10 plus Years
+5982947743,Rowan Allen,SP017,MD,0.95,1,2012-12-16,LC0039,Portland Clinic 10,10 plus Years
+4483231310,Avery Jones,SP009,MD,1.0,0,2007-09-21,LC0040,Tualatin Clinic 2,10 plus Years
+0705774199,Jordan Miller,SP004,MD,0.7,1,2020-06-09,LC0040,Tualatin Clinic 2,3 to 5 Years
+8600318222,Quinn Lewis,SP006,PA,0.95,1,2009-06-10,LC0041,Tigard Clinic 5,10 plus Years
+9823569895,Hayden Smith,SP018,MD,1.0,1,2013-01-21,LC0041,Tigard Clinic 5,10 plus Years
+0250319018,Riley Anderson,SP004,MD,1.0,0,2024-05-16,LC0041,Tigard Clinic 5,0 to 2 Years
+1153925661,Avery Nguyen,SP003,DO,0.95,1,2017-02-05,LC0041,Tigard Clinic 5,6 to 10 Years
+7258866869,Blake Clark,SP024,NP,1.0,1,2014-08-06,LC0041,Tigard Clinic 5,10 plus Years
+9131042444,Cameron Jones,SP019,MD,1.0,1,2016-03-07,LC0041,Tigard Clinic 5,6 to 10 Years
+6983371549,Blake Nguyen,SP004,MD,1.0,1,2020-09-12,LC0041,Tigard Clinic 5,3 to 5 Years
+1631616143,Parker Walker,SP006,MD,1.0,1,2010-10-09,LC0042,Milwaukie Clinic 4,10 plus Years
+8277917974,Sawyer Kim,SP030,NP,0.95,1,2017-12-06,LC0042,Milwaukie Clinic 4,6 to 10 Years
+1815455057,Rowan Lee,SP018,MD,0.95,1,2022-05-12,LC0042,Milwaukie Clinic 4,3 to 5 Years
+9429045494,Taylor Williams,SP016,NP,1.0,1,2016-09-24,LC0042,Milwaukie Clinic 4,6 to 10 Years
+4907522762,Skyler Gonzalez,SP006,MD,1.0,1,2014-05-16,LC0042,Milwaukie Clinic 4,10 plus Years
+6059044821,Quinn Brown,SP006,NP,0.8,0,2008-09-20,LC0042,Milwaukie Clinic 4,10 plus Years
+4708876775,Taylor Brown,SP001,MD,1.0,0,2010-08-28,LC0042,Milwaukie Clinic 4,10 plus Years
+9446187637,Morgan Lee,SP018,MD,1.0,1,2023-09-26,LC0042,Milwaukie Clinic 4,0 to 2 Years
+3467699738,Rowan Smith,SP001,MD,1.0,1,2016-02-24,LC0042,Milwaukie Clinic 4,6 to 10 Years
+5468350743,Alex Thomas,SP001,MD,1.0,1,2011-08-26,LC0042,Milwaukie Clinic 4,10 plus Years
+4525731313,Riley Wilson,SP018,MD,0.95,1,2013-11-04,LC0042,Milwaukie Clinic 4,10 plus Years
+3617287255,Taylor Lee,SP028,MD,1.0,0,2016-11-01,LC0042,Milwaukie Clinic 4,6 to 10 Years
+1098121321,Parker Gonzalez,SP019,MD,1.0,1,2016-01-29,LC0043,Tualatin Clinic 3,6 to 10 Years
+3518771784,Parker Thomas,SP012,MD,1.0,1,2019-02-13,LC0043,Tualatin Clinic 3,6 to 10 Years
+1737481328,Cameron Brown,SP012,DO,1.0,1,2010-10-30,LC0043,Tualatin Clinic 3,10 plus Years
+2331758717,Riley Miller,SP010,NP,0.95,0,2018-03-04,LC0043,Tualatin Clinic 3,6 to 10 Years
+0442757181,Alex Gonzalez,SP006,MD,1.0,1,2014-04-20,LC0043,Tualatin Clinic 3,10 plus Years
+2448223315,Reese Jones,SP014,MD,1.0,1,2023-08-20,LC0043,Tualatin Clinic 3,0 to 2 Years
+1243372971,Jamie Jones,SP010,MD,1.0,1,2008-12-17,LC0043,Tualatin Clinic 3,10 plus Years
+1312310470,Rowan Lewis,SP016,NP,1.0,1,2008-10-13,LC0043,Tualatin Clinic 3,10 plus Years
+3839257091,Taylor Miller,SP025,MD,1.0,1,2014-08-27,LC0043,Tualatin Clinic 3,10 plus Years
+3466086946,Alex Wilson,SP031,MD,1.0,1,2015-07-13,LC0043,Tualatin Clinic 3,6 to 10 Years
+6488957346,Casey Williams,SP002,PA,1.0,1,2018-12-14,LC0046,Milwaukie Clinic 6,6 to 10 Years
+7070544449,Quinn Jones,SP008,PA,0.95,1,2013-07-29,LC0046,Milwaukie Clinic 6,10 plus Years
+4457568914,Jamie Lewis,SP004,MD,0.6,1,2023-02-17,LC0046,Milwaukie Clinic 6,0 to 2 Years
+7217087966,Blake Nguyen,SP007,MD,1.0,1,2014-11-21,LC0046,Milwaukie Clinic 6,10 plus Years
+8181314726,Jamie Hall,SP006,MD,1.0,1,2008-06-04,LC0046,Milwaukie Clinic 6,10 plus Years
+8669439560,Cameron Lee,SP003,DO,1.0,1,2008-03-27,LC0046,Milwaukie Clinic 6,10 plus Years
+2212170693,Drew Smith,SP019,MD,0.5,1,2024-03-31,LC0046,Milwaukie Clinic 6,0 to 2 Years
+7408066172,Alex Lopez,SP012,MD,1.0,1,2008-07-07,LC0046,Milwaukie Clinic 6,10 plus Years
+1289299714,Cameron Lewis,SP025,MD,1.0,1,2023-10-08,LC0046,Milwaukie Clinic 6,0 to 2 Years
+2698429237,Avery Allen,SP001,MD,0.5,1,2011-03-19,LC0046,Milwaukie Clinic 6,10 plus Years
+9520494628,Parker Clark,SP002,MD,1.0,1,2007-10-02,LC0046,Milwaukie Clinic 6,10 plus Years
+7767537886,Taylor Garcia,SP008,MD,0.5,1,2011-09-18,LC0046,Milwaukie Clinic 6,10 plus Years
+2605539809,Hayden Hall,SP002,NP,0.95,1,2017-07-10,LC0047,Beaverton Infusion,6 to 10 Years
+2285787015,Emerson Jones,SP006,NP,1.0,1,2014-01-08,LC0047,Beaverton Infusion,10 plus Years
+3371321113,Alex Wright,SP031,MD,1.0,1,2020-09-22,LC0047,Beaverton Infusion,3 to 5 Years
+5444785678,Reese Kim,SP004,DO,1.0,1,2017-06-15,LC0047,Beaverton Infusion,6 to 10 Years
+6191464299,Hayden Young,SP004,MD,0.75,1,2013-07-07,LC0047,Beaverton Infusion,10 plus Years
+0297079046,Riley Lewis,SP016,MD,1.0,1,2017-11-24,LC0047,Beaverton Infusion,6 to 10 Years
+4121144223,Hayden Anderson,SP012,MD,0.4,1,2024-03-18,LC0047,Beaverton Infusion,0 to 2 Years
+1729586267,Reese Brown,SP016,NP,1.0,1,2013-09-20,LC0047,Beaverton Infusion,10 plus Years
+2122109547,Emerson Wright,SP008,NP,1.0,1,2008-11-16,LC0047,Beaverton Infusion,10 plus Years
+9248632004,Sawyer Clark,SP024,NP,0.6,1,2013-08-30,LC0048,Portland Imaging,10 plus Years
+1764712396,Alex Williams,SP003,NP,1.0,0,2021-10-01,LC0048,Portland Imaging,3 to 5 Years
+6828025083,Parker King,SP010,PA,0.75,1,2010-01-30,LC0048,Portland Imaging,10 plus Years
+8530657612,Cameron Thomas,SP018,MD,1.0,1,2023-10-17,LC0049,Tualatin Clinic 4,0 to 2 Years
+1719179403,Taylor Walker,SP024,PA,1.0,1,2017-01-11,LC0049,Tualatin Clinic 4,6 to 10 Years
+8159708174,Avery Garcia,SP007,MD,1.0,1,2017-04-11,LC0049,Tualatin Clinic 4,6 to 10 Years
+6241923563,Sawyer Lee,SP016,MD,1.0,1,2011-12-11,LC0049,Tualatin Clinic 4,10 plus Years
+5558387999,Alex Garcia,SP002,MD,0.95,1,2023-04-04,LC0049,Tualatin Clinic 4,0 to 2 Years
+7277262574,Quinn Garcia,SP003,MD,1.0,1,2006-09-04,LC0049,Tualatin Clinic 4,10 plus Years
+1374907898,Blake Anderson,SP002,MD,1.0,1,2011-08-08,LC0049,Tualatin Clinic 4,10 plus Years
+1933366403,Avery Nguyen,SP018,MD,1.0,1,2013-11-04,LC0049,Tualatin Clinic 4,10 plus Years
+9205468021,Quinn Johnson,SP006,MD,0.85,1,2014-12-12,LC0049,Tualatin Clinic 4,10 plus Years
+5763694877,Sawyer Brown,SP018,MD,1.0,0,2014-11-21,LC0049,Tualatin Clinic 4,10 plus Years
+3272326261,Quinn Nguyen,SP002,NP,1.0,1,2008-10-09,LC0049,Tualatin Clinic 4,10 plus Years
+9890429732,Taylor Lee,SP024,MD,0.4,1,2010-03-25,LC0049,Tualatin Clinic 4,10 plus Years
+5644043886,Jordan Clark,SP024,MD,1.0,1,2007-10-15,LC0049,Tualatin Clinic 4,10 plus Years
+7083498037,Emerson Wright,SP002,MD,1.0,1,2016-09-24,LC0049,Tualatin Clinic 4,6 to 10 Years
+7525827789,Riley Walker,SP001,MD,1.0,1,2012-07-30,LC0049,Tualatin Clinic 4,10 plus Years
+2255477273,Cameron Patel,SP001,MD,1.0,1,2016-08-09,LC0051,Portland Infusion,6 to 10 Years
+2403947164,Jordan Thomas,SP024,NP,1.0,1,2017-01-20,LC0052,Portland Surgery,6 to 10 Years
+3795141406,Parker Nguyen,SP005,MD,1.0,1,2019-02-28,LC0052,Portland Surgery,6 to 10 Years
+6320888032,Emerson Clark,SP015,MD,1.0,1,2016-04-03,LC0052,Portland Surgery,6 to 10 Years
+9511291962,Cameron Wright,SP009,DO,1.0,1,2018-02-23,LC0052,Portland Surgery,6 to 10 Years
+9838122107,Sawyer Wright,SP021,MD,0.95,1,2017-01-03,LC0052,Portland Surgery,6 to 10 Years
+1130090007,Riley Allen,SP012,NP,1.0,1,2018-03-26,LC0052,Portland Surgery,6 to 10 Years
+1587507069,Cameron Clark,SP012,MD,1.0,1,2017-07-24,LC0052,Portland Surgery,6 to 10 Years
+4836459742,Skyler Johnson,SP031,NP,1.0,1,2011-12-06,LC0052,Portland Surgery,10 plus Years
+4731401478,Parker Smith,SP003,DO,0.8,1,2010-08-14,LC0052,Portland Surgery,10 plus Years
+7241727864,Riley Miller,SP024,NP,1.0,1,2020-10-05,LC0052,Portland Surgery,3 to 5 Years
