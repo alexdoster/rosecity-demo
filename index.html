@@ -352,61 +352,8 @@ const TABLES = [
   "fact_claim_month","fact_denial_month","fact_ar_month"
 ];
 
-const SCHEMA = `TABLES:
-dim_specialty(specialty_id,specialty_name) -- 31 specialties
-dim_service_line(service_line_id,service_line_name) -- 22 service lines
-dim_location(location_id,location_name,city,region,clinic_type,is_hospital_based) -- 53 locations; region values: Central,West,East,South,North
-dim_payer(payer_id,payer_name,payer_category,allowed_multiplier) -- 17 payers; payer_category: Commercial,Medicare,Medicaid,Government,Self Pay,Other
-dim_denial_reason(denial_reason_id,denial_reason) -- 24 denial reasons
-dim_referral_destination(destination_id,organization_name,specialty,in_network_flag,competitor_flag,city) -- 25 destinations
-dim_provider(npi,provider_name,specialty_id,credential,fte,is_active,hire_date,primary_location_id,primary_location_name,tenure_bucket) -- 287 providers; primary_location_name is denormalized convenience column
-dim_patient(patient_id,age_band,gender,zip_code,first_visit_date,primary_payer_id) -- 52,000 patients
-
-fact_encounter(encounter_id,service_date,patient_id,npi,location_id,specialty_id,service_line_id,payer_id,encounter_type,cpt_code,units,wrvu,charge_amount) -- 249,925 rows; encounter_type: Office,Procedure,Imaging,Surgery,Telehealth
-fact_referral(referral_id,encounter_id,patient_id,referral_date,referring_npi,referring_provider,location_id,payer_id,specialty_requested,destination_id,referral_status,is_external,in_network_flag,revenue_at_risk,referring_provider_specialty) -- 38,789 rows; is_external=1 means leakage; referring_provider_specialty is a specialty_id (e.g. SP001) -- always join to dim_specialty to get specialty_name
-fact_appointment(patient_id,npi,location_id,specialty_id,appointment_date,booking_date,scheduled_days_out,appointment_type,status,no_show_flag,cancel_flag,new_patient_flag) -- 287,000 rows; NO appointment_id column; use rowid() if unique id needed; NOT joinable to fact_encounter at row level
-fact_claim_month(month,payer_id,location_id,claims,charge_amount,allowed_amount,net_allowed_after_denial,paid_amount_total) -- monthly grain
-fact_denial_month(month,payer_id,location_id,claims,denied_claims,denied_amount,allowed_amount,denial_reason_id) -- monthly grain; denial_reason_id = most frequent denial reason for that month/payer/location
-fact_ar_month(snapshot_month,payer_id,location_id,open_ar_amount,avg_ar_days,ar_0_30,ar_31_60,ar_61_90,ar_91_plus) -- month-end snapshots
-
-KEY JOINS:
-fact_encounter.npi -> dim_provider.npi
-fact_encounter.specialty_id -> dim_specialty.specialty_id
-fact_encounter.location_id -> dim_location.location_id
-fact_encounter.payer_id -> dim_payer.payer_id
-fact_referral.destination_id -> dim_referral_destination.destination_id
-fact_denial_month.denial_reason_id -> dim_denial_reason.denial_reason_id
-dim_provider.specialty_id -> dim_specialty.specialty_id
-
-DATA RULES:
-- Always normalize wRVU by FTE when comparing providers
-- Leakage rate = SUM(is_external) / COUNT(*) from fact_referral
-- revenue_at_risk only populated when is_external=1
-- paid_amount_total in fact_claim_month is the correct revenue field; charge_amount is gross charges only
-- Denial rate = denied_claims / claims from fact_denial_month
-- fact_appointment and fact_encounter are NOT joinable at row level
-- Data covers 2022-2024 only`;
-
-const SYSTEM_SQL = `You are a SQL expert assistant for a healthcare analytics database (DuckDB dialect).
-Given a natural language question, write a single DuckDB SQL query to answer it.
-
-${SCHEMA}
-
-RULES:
-- Return ONLY the SQL query, no explanation, no markdown fences, no semicolon at end
-- Use DuckDB syntax (e.g. date_trunc, strftime, YEAR(), MONTH() work)
-- Limit result sets to 20 rows maximum unless the question asks for all
-- For trend questions, group by year or month
-- fact_appointment has no appointment_id column — use rowid() if a unique identifier is needed
-- Always use table aliases for clarity
-- Round financial figures to 2 decimal places`;
-
-const SYSTEM_ANSWER = `You are an AI analytics assistant for Rose City Clinics, a multi-specialty physician group in Portland, Oregon.
-You have just executed a SQL query against the clinic's 2022-2024 analytics database and received the results below.
-Answer the user's question using the query results. Be concise and executive-friendly.
-Lead with the direct answer. Use $ for currency, % for rates, commas for large numbers.
-If results are empty, say so and suggest why. Do not refer to this as synthetic or demo data.
-Format your response as plain conversational prose or simple bullet points only. Do not use markdown headers, horizontal rules, emojis, bold text, or markdown tables. Keep answers brief and easy to read at a glance.`;
+// SCHEMA / SYSTEM_SQL / SYSTEM_ANSWER live in cloudflare-worker.js now, not
+// here — the client only sends a mode ("sql" | "answer"), never a prompt.
 
 const QUESTIONS = {
   referral:["Which specialty has the highest referral leakage rate?","What is our total estimated revenue at risk from external referrals?","Which external organizations are receiving the most of our referrals?","How has our external referral rate trended over the past 3 years?","Which referring providers are sending the most patients outside our network?","What is the leakage rate broken down by payer?"],
@@ -460,7 +407,9 @@ function calcCost(inputTok, outputTok) {
   return (inputTok / 1e6) * 3.00 + (outputTok / 1e6) * 15.00;
 }
 
-async function claudeCall(system, messages, maxTokens=800) {
+// mode is "sql" or "answer" — the system prompts live in the Worker so the
+// password gate can't be used to run this as an open Claude proxy.
+async function claudeCall(mode, messages, maxTokens=800) {
   let res;
   try {
     res = await fetch(WORKER_URL, {
@@ -470,9 +419,8 @@ async function claudeCall(system, messages, maxTokens=800) {
         "X-Demo-Password": DEMO_PASSWORD
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-6",
+        mode: mode,
         max_tokens: maxTokens,
-        system: system,
         messages: messages
       })
     });
@@ -488,6 +436,11 @@ async function claudeCall(system, messages, maxTokens=800) {
     sessionOutputTokens += data.usage.output_tokens || 0;
   }
   return { text: data.content[0].text.trim(), usage: data.usage || {} };
+}
+
+// The prompt says no markdown fences, but models occasionally add them anyway
+function stripFences(t) {
+  return t.replace(/^\s*```[a-z]*\s*/i, "").replace(/\s*```\s*$/, "").trim();
 }
 
 // ── Query execution ────────────────────────────────────────────
@@ -542,8 +495,8 @@ async function send(text) {
   try {
     // Step 1: Generate SQL
     conversationHistory.push({ role: "user", content: text });
-    const sqlResp = await claudeCall(SYSTEM_SQL, conversationHistory.map(m => ({role:m.role,content:m.content})), 600);
-    const sql = sqlResp.text;
+    const sqlResp = await claudeCall("sql", conversationHistory.map(m => ({role:m.role,content:m.content})), 600);
+    const sql = stripFences(sqlResp.text);
     let totalInput = sqlResp.usage.input_tokens || 0;
     let totalOutput = sqlResp.usage.output_tokens || 0;
     conversationHistory.push({ role: "assistant", content: sql });
@@ -556,14 +509,22 @@ async function send(text) {
     } catch (queryErr) {
       updateTyping(typingId, "Retrying query...");
       const fixPrompt = `The SQL query failed with error: ${queryErr.message}\n\nSQL attempted:\n${sql}\n\nPlease write a corrected SQL query.`;
-      const fixResp = await claudeCall(SYSTEM_SQL, [
+      const fixResp = await claudeCall("sql", [
         ...conversationHistory.slice(0, -1),
         { role: "user", content: fixPrompt }
       ], 600);
       totalInput += fixResp.usage.input_tokens || 0;
       totalOutput += fixResp.usage.output_tokens || 0;
-      queryResult = await runQuery(fixResp.text);
-      conversationHistory[conversationHistory.length - 1].content = fixResp.text;
+      const fixedSql = stripFences(fixResp.text);
+      try {
+        queryResult = await runQuery(fixedSql);
+      } catch (secondErr) {
+        // Never surface a raw DuckDB error to the user (e.g. the model
+        // returning refusal prose instead of SQL on an off-topic/injection
+        // attempt) — always fail into a friendly, on-brand message.
+        throw new Error("I couldn't turn that into a data query. Try asking about referrals, scheduling, provider productivity, or financials.");
+      }
+      conversationHistory[conversationHistory.length - 1].content = fixedSql;
     }
 
     updateTyping(typingId, "Composing answer...");
@@ -575,7 +536,7 @@ async function send(text) {
       { role: "assistant", content: `I'll query the database to answer that.\n\nSQL:\n${conversationHistory[conversationHistory.length-1].content}\n\nResults:\n${resultText}` },
       { role: "user", content: "Please provide a clear, executive-friendly answer based on these results." }
     ];
-    const answerResp = await claudeCall(SYSTEM_ANSWER, answerMessages, 800);
+    const answerResp = await claudeCall("answer", answerMessages, 800);
     totalInput += answerResp.usage.input_tokens || 0;
     totalOutput += answerResp.usage.output_tokens || 0;
 
