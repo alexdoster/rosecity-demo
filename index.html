@@ -335,13 +335,20 @@ body{font-family:Georgia,'Times New Roman',serif;background:#f7f6f3;height:100vh
         <textarea class="input-box" id="inp" rows="1" placeholder="Ask a question about the data..." onkeydown="onKey(event)" disabled></textarea>
         <button class="send-btn" id="send" onclick="doSend()" disabled>Ask →</button>
       </div>
-      <div class="inp-hint">Press Enter to send &nbsp;·&nbsp; Shift+Enter for new line</div>
+      <div class="inp-hint" id="inp-hint">Press Enter to send &nbsp;·&nbsp; Shift+Enter for new line</div>
     </div>
   </div>
 </div>
 
 <script type="module">
 import * as duckdb from "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm";
+
+// Bump on every deploy — shown in the input hint and console so a stale
+// cached page is identifiable at a glance.
+const APP_VERSION = "1.0.0";
+console.log("Rose City Clinics Demo v" + APP_VERSION);
+document.getElementById("inp-hint").textContent =
+  `Press Enter to send · Shift+Enter for new line · v${APP_VERSION}`;
 
 const BASE = "https://raw.githubusercontent.com/alexdoster/rosecity-demo/data/";
 
