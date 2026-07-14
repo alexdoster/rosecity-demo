@@ -341,11 +341,9 @@ body{font-family:Georgia,'Times New Roman',serif;background:#f7f6f3;height:100vh
 </div>
 
 <script type="module">
-import * as duckdb from "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm";
-
 // Bump on every deploy — shown in the input hint and console so a stale
 // cached page is identifiable at a glance.
-const APP_VERSION = "1.0.0";
+const APP_VERSION = "1.0.1";
 console.log("Rose City Clinics Demo v" + APP_VERSION);
 document.getElementById("inp-hint").textContent =
   `Press Enter to send · Shift+Enter for new line · v${APP_VERSION}`;
@@ -374,7 +372,18 @@ let db = null, conn = null, DEMO_PASSWORD = null, loading = false, activeCat = n
 let conversationHistory = [];
 
 // ── DuckDB init ────────────────────────────────────────────────
+function networkBlockedError() {
+  const e = new Error("NETWORK_BLOCKED"); e.isNetworkError = true; return e;
+}
+
 async function initDuckDB() {
+  // Dynamic import (not a static top-level import) so a blocked jsDelivr
+  // request throws a catchable error here instead of failing the whole
+  // module before any of this file's code — including error handling — runs.
+  let duckdb;
+  try {
+    duckdb = await import("https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm");
+  } catch { throw networkBlockedError(); }
   const JSDELIVR_BUNDLES = duckdb.getJsDelivrBundles();
   const bundle = await duckdb.selectBundle(JSDELIVR_BUNDLES);
   const worker_url = URL.createObjectURL(
@@ -389,7 +398,10 @@ async function initDuckDB() {
 
 async function loadTable(name, setStatus) {
   const url = BASE + name + ".csv";
-  const resp = await fetch(url);
+  let resp;
+  try {
+    resp = await fetch(url);
+  } catch { throw networkBlockedError(); }
   if (!resp.ok) throw new Error(`Failed to fetch ${name}.csv: ${resp.status}`);
   const csvText = await resp.text();
   await db.registerFileText(name + ".csv", csvText);
@@ -431,11 +443,7 @@ async function claudeCall(mode, messages, maxTokens=800) {
         messages: messages
       })
     });
-  } catch (networkErr) {
-    const e = new Error("NETWORK_BLOCKED");
-    e.isNetworkError = true;
-    throw e;
-  }
+  } catch { throw networkBlockedError(); }
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
   if (data.usage) {
@@ -704,7 +712,11 @@ window.submitKey = async function() {
     document.getElementById("send").disabled = false;
     document.getElementById("inp").focus();
   } catch (err) {
-    setStatus("Error: " + err.message);
+    if (err.isNetworkError) {
+      setStatus("This network may be blocking external API connections, which is common in healthcare organizations. Try opening this link using a mobile hotspot, or we can walk through it together at our meeting.");
+    } else {
+      setStatus("Error: " + err.message);
+    }
     document.getElementById("status-pill").textContent = "● Error";
     document.getElementById("status-pill").className = "pill error";
     document.querySelector(".modal-btn").disabled = false;
